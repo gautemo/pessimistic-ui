@@ -1,3 +1,3 @@
 # Pessimistic UI
 
-Assume the worst until proven succesfull.
+Assume the worst until proven successful.

@@ -48,7 +48,7 @@ function removeError(remove: {todo: string, type: 'del' | 'add' }) {
 <template>
   <main>
     <h1>My pessimistic TODO list</h1>
-    <p>Pessimistic UI pattern - assume the worst until proven succesfull</p>
+    <p>Pessimistic UI pattern - assume the worst until proven successful</p>
     <form @submit.prevent="addTodo">
       <input type="text" name="add" placeholder="Buy ice cream">
       <button class="add">Add</button>

@@ -19,7 +19,7 @@ export default defineNuxtConfig({
       meta: [
         {
           name: 'description',
-          content: 'Demo of the pessimistic UI pattern, with a TODO list. Assume the worst until proven succesfull'
+          content: 'Demo of the pessimistic UI pattern, with a TODO list. Assume the worst until proven successful'
         },
         {
           name: 'author',
@@ -43,7 +43,7 @@ export default defineNuxtConfig({
         },
         {
           property: 'og:description',
-          content: 'Demo of the pessimistic UI pattern, with a TODO list. Assume the worst until proven succesfull'
+          content: 'Demo of the pessimistic UI pattern, with a TODO list. Assume the worst until proven successful'
         },
         {
           property: 'og:type',
