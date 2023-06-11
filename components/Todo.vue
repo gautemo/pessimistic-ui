@@ -114,6 +114,7 @@ aside {
   bottom: 1rem;
   display: flex;
   flex-direction: column;
+  margin-left: 1rem;
 }
 
 ul {
