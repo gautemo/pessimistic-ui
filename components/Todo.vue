@@ -68,9 +68,7 @@ function removeError(remove: {todo: string, type: 'del' | 'add' }) {
   </main>
   <aside>
     <div v-for="error of errors" class="error">
-      <span v-if="error.type === 'add'">Could not add </span>
-      <span v-else-if="error.type === 'del'">Could not delete </span>
-      <span>{{ error.todo }}</span>
+      <span>{{ `${error.type === 'add' ? 'Could not add' : 'Could not delete'} ${error.todo}` }}</span>
       <button @click="removeError(error)" class="del">
         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 15 15"><path fill="#000" fill-rule="evenodd" d="M11.782 4.032a.575.575 0 1 0-.813-.814L7.5 6.687L4.032 3.218a.575.575 0 0 0-.814.814L6.687 7.5l-3.469 3.468a.575.575 0 0 0 .814.814L7.5 8.313l3.469 3.469a.575.575 0 0 0 .813-.814L8.313 7.5l3.469-3.468Z" clip-rule="evenodd"/></svg>
       </button>
@@ -83,7 +81,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 90vw;
+  max-width: 85vw;
   margin: auto;
 }
 
@@ -95,6 +93,7 @@ p {
   font-style: italic;
   border-left: 2px solid #1aadff;
   padding: 1rem 0.5rem;
+  width: 100%;
 }
 
 .error {

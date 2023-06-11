@@ -35,4 +35,20 @@ section {
   border-left: 1px solid #27272a;
   padding-left: 2rem;
 }
+
+@media screen and (max-width: 700px) {
+  main {
+    grid-template-columns: auto;
+    align-content: center;
+    gap: 0;
+  }
+
+  section {
+    border-left: none;
+    border-top: 1px solid #27272a;
+    padding-top: 2rem;
+    padding-left: 0;
+    text-align: center;
+  }
+}
 </style>
