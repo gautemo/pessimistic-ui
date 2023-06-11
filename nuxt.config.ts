@@ -61,7 +61,10 @@ export default defineNuxtConfig({
   nitro: {
     storage: {
       db: {
-        driver: vercelKVDriver()
+        driver: vercelKVDriver({
+          url: process.env.KV_REST_API_URL,
+          token: process.env.KV_REST_API_TOKEN
+        })
       }
     },
     devStorage: {
