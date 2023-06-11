@@ -20,7 +20,6 @@ main {
   place-items: center;
   grid-template-columns: auto auto;
   gap: 2rem;
-  height: 100vh;
 }
 
 h1 {
