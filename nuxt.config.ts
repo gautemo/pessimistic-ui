@@ -1,5 +1,3 @@
-import vercelKVDriver from "unstorage/drivers/vercel-kv"
-
 export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
@@ -61,10 +59,7 @@ export default defineNuxtConfig({
   nitro: {
     storage: {
       db: {
-        driver: vercelKVDriver({
-          url: process.env.KV_REST_API_URL,
-          token: process.env.KV_REST_API_TOKEN
-        })
+        driver: 'vercelKV',
       }
     },
     devStorage: {
