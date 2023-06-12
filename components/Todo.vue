@@ -11,7 +11,11 @@ const { data, pending, error } = useFetch('/api/todos', {
 const errors = ref<{todo: string, type: 'del' | 'add' }[]>([])
 
 async function addTodo(event: Event) {
-  const todo = (event.target as any).elements.add.value
+  const inputEl: HTMLInputElement = (event.target as any).elements.add
+  const todo = inputEl.value
+  if(document.activeElement === inputEl) {
+    inputEl.blur()
+  }
   errors.value.push({ todo, type: 'add'})
   const todos = await $fetch('/api/todos', {
     method: 'POST',
