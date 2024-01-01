@@ -10,10 +10,10 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "@types/node": "^18",
-    "nuxt": "^3.5.3"
+    "@types/node": "^20.10.6",
+    "nuxt": "^3.9.0"
   },
   "dependencies": {
-    "@vercel/kv": "^0.2.1"
+    "@vercel/kv": "^1.0.1"
   }
 }
